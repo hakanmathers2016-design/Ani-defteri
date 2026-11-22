@@ -900,20 +900,12 @@ function ekObjelerCiz() {
   tissue(W*.5-20*k,H*.63,-1,'rgba(235,241,255,.48)'); tissue(W*.5+20*k,H*.63,1,'rgba(104,145,229,.48)'); tissue(W*.5-2*k,H*.64,-1,'rgba(145,113,218,.34)'); c.restore();
   // İki özel koleksiyon kartı
   const kart=(x,y,baslik,renk,tip,alt)=>{c.save();c.translate(x,y);c.rotate(-.08);c.shadowColor='rgba(0,0,0,.35)';c.shadowBlur=12*k;c.shadowOffsetY=5*k;rr(0,0,116*k,164*k,8*k,'#f6f0df','#d7c9a8');c.shadowColor='transparent';rr(5*k,5*k,106*k,154*k,5*k,renk);c.fillStyle='#fff9e9';c.font='bold '+(10*k)+'px Georgia';c.fillText(baslik,12*k,20*k);rr(10*k,28*k,96*k,92*k,4*k,'rgba(255,255,255,.75)');miniKarakter(58*k,76*k,tip,.86);c.fillStyle='#342d40';c.font='bold '+(8*k)+'px Arial';c.fillText(alt,12*k,135*k);c.fillStyle='#806c51';c.font=(6*k)+'px Arial';c.fillText('ÖZEL HATIRA KARTI',12*k,148*k);c.restore();};
-  kart(58*k,H*.43,'CORALINE','#8b9fca','coraline','Cesur küçük gezgin'); kart(190*k,H*.47,'WYBIE','#b2a0cb','wybie','Gizemli dost');
-  // Yunus Emre Gündüz chibi figürü
-  golge(370*k,H*.84,48*k,8*k); rr(337*k,H*.77,66*k,48*k,12*k,'#26324a','#7185a9'); miniKarakter(370*k,H*.77,'yunus',1.15);
-  c.fillStyle='#f1e9db';c.font='bold '+(10*k)+'px Arial';c.textAlign='center';c.fillText('YUNUS EMRE GÜNDÜZ',370*k,H*.91);
+  kart(58*k,H*.43,'CORALINE','#8b9fca','coraline','Cesur Güzel gezgin'); kart(190*k,H*.47,'WYBIE','#b2a0cb','wybie','Secret Lover');
   // Arby's tabelası ve el yapımı döner dürüm
   c.save();c.translate(75*k,H*.78);c.fillStyle='#b3262e';c.beginPath();c.moveTo(0,0);c.lineTo(112*k,0);c.lineTo(98*k,38*k);c.lineTo(14*k,38*k);c.closePath();c.fill();c.fillStyle='#fff';c.font='bold '+(21*k)+'px Georgia';c.textAlign='center';c.fillText("Arby's",56*k,27*k);c.restore();
   c.save();c.translate(95*k,H*.87);c.rotate(-.23);c.fillStyle='#d9b47a';c.beginPath();c.moveTo(-38*k,-10*k);c.quadraticCurveTo(0,-28*k,42*k,-9*k);c.lineTo(34*k,13*k);c.quadraticCurveTo(0,25*k,-38*k,10*k);c.closePath();c.fill();c.fillStyle='#6b9b49';c.fillRect(-22*k,-3*k,48*k,5*k);c.fillStyle='#9e4937';c.fillRect(-17*k,3*k,38*k,5*k);c.restore();
-  c.fillStyle='#fff1dd';c.font='bold '+(9*k)+'px Arial';c.textAlign='center';c.fillText('EL YAPIMI DÖNER DÜRÜM',100*k,H*.93);
-  // Sapın sağında koltukta oturan Wybie ve kucağında uzanan Coraline
-  const sx=W*.5+116*k,sy=H*.73;golge(sx+26*k,sy+72*k,84*k,10*k);rr(sx-5*k,sy+5*k,118*k,65*k,18*k,'#4a3c62','#a99bc7');rr(sx-16*k,sy-5*k,24*k,78*k,12*k,'#66527f');rr(sx+96*k,sy-5*k,24*k,78*k,12*k,'#66527f');c.fillStyle='#8270a0';c.beginPath();c.roundRect(sx+2*k,sy-20*k,108*k,40*k,14*k);c.fill();miniKarakter(sx+34*k,sy-10*k,'wybie',1.25);c.save();c.translate(sx+69*k,sy+7*k);c.rotate(-.5);miniKarakter(0,0,'coraline',.95);c.restore();
-  // Minecraft iskelet okçu koleksiyon figürü
-  const px=W*.79,py=H*.76;golge(px+42*k,py+125*k,55*k,8*k);rr(px,py,90*k,118*k,8*k,'#d9e0e6','#64758b');rr(px+7*k,py+7*k,76*k,82*k,5*k,'#a8b5c7');c.fillStyle='#f8f8ef';c.font='bold '+(9*k)+'px Arial';c.textAlign='center';c.fillText('MINECRAFT',px+45*k,py+101*k);
-  c.fillStyle='#eeeede';c.fillRect(px+28*k,py+25*k,34*k,31*k);c.fillStyle='#30353b';c.fillRect(px+34*k,py+34*k,7*k,7*k);c.fillRect(px+49*k,py+34*k,7*k,7*k);c.fillRect(px+39*k,py+47*k,12*k,4*k);c.fillStyle='#e7e4d8';c.fillRect(px+39*k,py+57*k,12*k,24*k);c.fillRect(px+23*k,py+61*k,15*k,7*k);c.fillRect(px+52*k,py+61*k,15*k,7*k);c.strokeStyle='#654d3b';c.lineWidth=3*k;c.beginPath();c.arc(px+72*k,py+62*k,18*k,-1.2,1.2);c.stroke();c.strokeStyle='#c49b63';c.lineWidth=2*k;c.beginPath();c.moveTo(px+70*k,py+43*k);c.lineTo(px+70*k,py+81*k);c.stroke();
-  // Elle şekillendirilmiş kil Halloween balkabağı
+  c.fillStyle='#fff1dd';c.font='bold '+(9*k)+'px Arial';c.textAlign='center';c.fillText(,100*k,H*.93);
+ // Elle şekillendirilmiş kil Halloween balkabağı
   const hx=W*.88,hy=H*.85;golge(hx,hy+30*k,48*k,9*k);const pg=c.createRadialGradient(hx-13*k,hy-12*k,3*k,hx,hy,42*k);pg.addColorStop(0,'#ffb34b');pg.addColorStop(1,'#b84b18');c.fillStyle=pg;c.beginPath();c.ellipse(hx,hy,39*k,31*k,0,0,Math.PI*2);c.fill();c.fillStyle='rgba(116,47,20,.35)';[-19,-7,7,19].forEach(dx=>{c.beginPath();c.ellipse(hx+dx*k,hy,7*k,28*k,0,0,Math.PI*2);c.fill();});c.fillStyle='#5b793c';c.beginPath();c.moveTo(hx-4*k,hy-27*k);c.quadraticCurveTo(hx-7*k,hy-48*k,hx+5*k,hy-44*k);c.lineTo(hx+8*k,hy-27*k);c.fill();c.fillStyle='#2d241f';c.beginPath();c.moveTo(hx-23*k,hy-5*k);c.lineTo(hx-8*k,hy-15*k);c.lineTo(hx-6*k,hy+1*k);c.closePath();c.fill();c.beginPath();c.moveTo(hx+23*k,hy-5*k);c.lineTo(hx+8*k,hy-15*k);c.lineTo(hx+6*k,hy+1*k);c.closePath();c.fill();c.beginPath();c.moveTo(hx-15*k,hy+10*k);c.lineTo(hx+15*k,hy+10*k);c.lineTo(hx+9*k,hy+21*k);c.lineTo(hx-9*k,hy+21*k);c.closePath();c.fill();
   c.restore();
 }
